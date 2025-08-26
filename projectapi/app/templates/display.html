@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <a href="{% url 'index' %}"><button id="d3">Search city</button></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'serial' %}" id="d4"><button id="d2">View Api</button></a>
+    <table id="table" border="2" >
+        <caption>Weather details of a city</caption>
+        <br>
+        <tr>
+            <th>City</th>
+            <th>Temperature</th>
+            <th>Wind</th>
+            <th>Description</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for weather in weathers %}
+        <tr>
+            <td>{{weather.city}}</td>
+            <td>{{weather.temperature}}</td>
+            <td>{{weather.wind}}</td>
+            <td>{{weather.description}}</td>
+            <td>{{weather.timestamp}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    
+        <a href="{% url 'display' %}"><button id="d1">View Weather history</button></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'serial' %}" id="d2"><button id="d2">View Api</button></a>
+    
+    <div id="div1">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="" id="lab1">SEARCH FOR A CITY</label> <br><br>
+            <input type="text" name="city" id="inp1" > <br><br>
+            <button type="submit" id="btn1">GET WEATHER</button>
+        </form><br>
+    </div>
+
+    <div id="div2">
+    {% if weather %}
+    <h2>Weather in {{weather.city}}</h2>
+    <p>Temperature : {{weather.temperature}}</p>
+    <p>Wind : {{weather.wind}}</p>
+    <p>Description : {{weather.description}}</p>
+    {% endif %}
+    </div>
+ 
+</body>
+</html>

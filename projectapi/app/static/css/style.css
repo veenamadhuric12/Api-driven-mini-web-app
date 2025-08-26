@@ -1,0 +1,89 @@
+#div1{
+    background-color: #d0faf9;
+    height: 150px;
+    width: 300px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid red;
+    margin-top: 60px;
+}
+#div2{
+    background-color: #eed0fa;
+    color: black;
+    height: 150px;
+    width: 300px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 251, 0);
+    margin-top: 10px;
+} 
+#d1,#d3{
+    background-color: rgb(253, 172, 22);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration-line: none;
+    margin-left: 600px;
+    margin-top: 40px;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 10px;
+}
+#d2,#d4{
+    background-color: rgb(253, 172, 22);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration-line: none;
+    margin-top: 40px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+}
+#lab1{
+    color: blue; 
+    font-size: 18px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+#inp1{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+#btn1{
+    background-color: rgb(160, 252, 90);
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+#table{
+    margin: auto;
+    margin-top: 50px;
+    /* border-collapse: collapse; */
+}
+#table caption{
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(32, 190, 32);
+    padding-bottom: 30px;
+}
+#table tr th{
+    color: blue;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+#table tr td{
+    background-color: azure;
+    text-align: center;
+}
+
