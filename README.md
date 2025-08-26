@@ -14,6 +14,9 @@ Database : PostgreSQL
 Frontend : HTML, CSS, JavaScript
 API : OpenWeather API
 
+# Demo :
+Github Repo : https://github.com/veenamadhuric12/Api-driven-mini-web-app
+
 # Setup Instructions :
 1. Create and activate virtual environment :
      python -m venv project1
